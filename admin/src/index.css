@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Universal Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f7f8fc; /* Lighter background for better contrast */
+  color: #333; /* Consistent text color */
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff7e5f;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 0px 0;
+}
+
+/* App Layout */
+.app-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Flexbox Utilities */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Utilities */
+.cursor {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}

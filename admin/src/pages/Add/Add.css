@@ -1,0 +1,104 @@
+/* Add.css */
+.add {
+  max-width: 1600px;
+  margin: 5px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.add-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-img-upload {
+  text-align: center;
+}
+
+.add-img-upload p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.add-img-upload img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-img-upload img:hover {
+  border-color: #777;
+}
+
+.add-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.add-input-group input,
+.add-input-group textarea,
+.add-input-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  transition: border-color 0.3s;
+}
+
+.add-input-group input:focus,
+.add-input-group textarea:focus,
+.add-input-group select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 20px;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.add-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-btn:active {
+  background: #004090;
+  transform: scale(1);
+}
